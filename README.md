@@ -44,6 +44,7 @@ You have two options to select playlists:
 
 ## Notes
 - Ensure that the database file and playlist files are accessible and not being used by other applications during the injection process.
+- Ensure your ID3 tags are populated. If title and artist are blank they will be blank on the Pacemaker too!
 - The application will handle multiple playlists in a folder and inject each one separately.
 - If you encounter any issues, please check the file paths and ensure they are correct.
 - Have observed that if you sync lots of cases (I tested with about 2500 tracks spread over 38 cases) to your Pacemaker device at once it can encounter issues where the tracks get copied to the device but only some cases do and they are empty. Unsure why, maybe bad media (corrupt mp3 maybe?), maybe something went wrong when setting up the database, maybe it's just too much to sync at once. I tested in batches syncing a handful of cases at a time and it seems ok.
