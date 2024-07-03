@@ -6,7 +6,7 @@ This application allows you to inject playlists from `.m3u8` files into a Pacema
 ## Requirements
 - Windows operating system
 - SQLite database file for Pacemaker
-- Playlist files in `.m3u8` format
+- Playlist files in `.m3u8` format - you can export your playlists from Rekordbox in this format - Right click playlist > Export a playlist to a file > Export a playlist to a file for music apps (*.m3u8)
 
 ## Instructions
 
@@ -38,7 +38,12 @@ You have two options to select playlists:
 ### Close the Application
 1. Once the process is complete, you can close the application.
 
+### Restart Pacemaker Editor Software
+1. It is worth restarting the editor software to update the cases visible in the GUI. They will update if you start clicking on the cases in the cases section but a fresh restart will bring them all back at once.
+
+
 ## Notes
 - Ensure that the database file and playlist files are accessible and not being used by other applications during the injection process.
 - The application will handle multiple playlists in a folder and inject each one separately.
 - If you encounter any issues, please check the file paths and ensure they are correct.
+- Have observed that if you sync lots of cases (I tested with about 2500 tracks spread over 38 cases) to your Pacemaker device at once it can encounter issues where the tracks get copied to the device but only some cases do and they are empty. Unsure why, maybe bad media (corrupt mp3 maybe?), maybe something went wrong when setting up the database, maybe it's just too much to sync at once. I tested in batches syncing a handful of cases at a time and it seems ok.
